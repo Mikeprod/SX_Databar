@@ -240,28 +240,28 @@ eventframe:SetScript("OnEvent", function(self,event, ...)
 		secondaryTradeSkillFrame:Show() 
 		secondaryTradeSkillFrame:EnableMouse(true)
 		
-		for i=1,GetNumTradeSkills() do
-			local cooldown = GetTradeSkillCooldown(i)
-			if cooldown then
-				local name = GetTradeSkillInfo(i)
-				for k, v in pairs(proffessions) do
-					for u = 1, #v do
-						if k == prof2Name then
-							if v[u] == name then
-								if not prof2OnCooldown then prof2OnCooldown = true end
-								secondaryTradeSkillIcon:SetVertexColor(unpack(cfg.color.inactive))
-								secondaryTradeSkillText:SetTextColor(unpack(cfg.color.inactive))
-								if not prof2OnCooldown then
-									secondaryTradeSkillIcon:SetVertexColor(unpack(cfg.color.normal))
-									secondaryTradeSkillText:SetTextColor(unpack(cfg.color.normal))
-								end
-							end
-						end
-					end
-				end
+		-- for i=1,GetNumTradeSkills() do
+			-- local cooldown = GetTradeSkillCooldown(i)
+			-- if cooldown then
+				-- local name = GetTradeSkillInfo(i)
+				-- for k, v in pairs(proffessions) do
+					-- for u = 1, #v do
+						-- if k == prof2Name then
+							-- if v[u] == name then
+								-- if not prof2OnCooldown then prof2OnCooldown = true end
+								-- secondaryTradeSkillIcon:SetVertexColor(unpack(cfg.color.inactive))
+								-- secondaryTradeSkillText:SetTextColor(unpack(cfg.color.inactive))
+								-- if not prof2OnCooldown then
+									-- secondaryTradeSkillIcon:SetVertexColor(unpack(cfg.color.normal))
+									-- secondaryTradeSkillText:SetTextColor(unpack(cfg.color.normal))
+								-- end
+							-- end
+						-- end
+					-- end
+				-- end
 				
-			end
-		end
+			-- end
+		-- end
 		else
 		secondaryTradeSkillFrame:Hide() 
 		secondaryTradeSkillFrame:EnableMouse(false)	
