@@ -1,4 +1,4 @@
-## Interface: 60200
+## Interface: 70100
 ## Title: SX_Databar
 ## Author: |cff00FF99Saxitoxin
 ## Notes: Adds a bottombar by the request of |cffffffffu/sammojo|r on Reddit, Icons made by |cffffffffu/sammojo|r
