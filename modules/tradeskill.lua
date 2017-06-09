@@ -126,13 +126,13 @@ secondaryTradeSkillFrame:SetScript("OnEnter", function()
 	secondaryTradeSkillStatusbar:SetStatusBarColor(unpack(cfg.color.hover))
 	if not cfg.tradeSkill.showTooltip then return end
 	GameTooltip:SetOwner(tradeSkillFrame, cfg.tooltipPos)
-	for i=1,GetNumTradeSkills() do
-		local cooldown = GetTradeSkillCooldown(i)
-		if cooldown then
-			local name = GetTradeSkillInfo(i)
-			GameTooltip:AddDoubleLine(name, SecondsToTime(cooldown), 1, 1, 0, 1, 1, 1)			
-		end
-	end
+	-- for i=1,GetNumTradeSkills() do
+	-- 	local cooldown = GetTradeSkillCooldown(i)
+	-- 	if cooldown then
+	-- 		local name = GetTradeSkillInfo(i)
+	-- 		GameTooltip:AddDoubleLine(name, SecondsToTime(cooldown), 1, 1, 0, 1, 1, 1)			
+	-- 	end
+	-- end
 	GameTooltip:Show()
 end)
 
