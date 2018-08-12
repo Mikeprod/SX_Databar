@@ -14,7 +14,7 @@ modules\talent.lua
 modules\clock.lua
 modules\tradeskill.lua
 modules\currency.lua
-modules\performance.lua
+#modules\performance.lua
 modules\system.lua
 modules\gold.lua
 modules\heartstone.lua

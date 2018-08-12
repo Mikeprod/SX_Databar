@@ -234,7 +234,7 @@ self:UnregisterEvent("ADDON_LOADED")
 			playerData["CLASS"] = cfg.CLASS
 		end
 		
-        local weekday, month, day, year = CalendarGetDate()
+        local weekday, month, day, year = C_Calendar.GetDate().weekday, C_Calendar.GetDate().month, C_Calendar.GetDate().monthDay, C_Calendar.GetDate().year
         local today = ConvertDateToNumber(month, day, year)
         local updateData
  

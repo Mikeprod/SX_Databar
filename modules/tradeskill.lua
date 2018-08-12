@@ -171,7 +171,7 @@ end)
 
 local eventframe = CreateFrame("Frame")
 eventframe:RegisterEvent("PLAYER_ENTERING_WORLD")
-eventframe:RegisterEvent("TRADE_SKILL_UPDATE")
+eventframe:RegisterEvent("TRADE_SKILL_DETAILS_UPDATE")
 eventframe:RegisterEvent("TRAINER_CLOSED")
 eventframe:RegisterEvent("SPELLS_CHANGED")
 eventframe:RegisterUnitEvent("UNIT_SPELLCAST_STOP", "player")

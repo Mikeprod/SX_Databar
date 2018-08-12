@@ -62,8 +62,8 @@ clockFrame:SetScript('OnUpdate', function(self, e)
 			end			
 
 		end
-		if (CalendarGetNumPendingInvites() > 0) then
-			calendarText:SetText(string.format("%s  (|cffffff00%i|r)", "New Event!", (CalendarGetNumPendingInvites())))
+		if (C_Calendar.GetNumPendingInvites() > 0) then
+			calendarText:SetText(string.format("%s  (|cffffff00%i|r)", "New Event!", (C_Calendar.GetNumPendingInvites())))
 		else
 			calendarText:SetText("")
 		end
