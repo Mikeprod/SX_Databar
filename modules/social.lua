@@ -28,12 +28,12 @@ chatFrame:SetScript("OnClick", function(self, button, down)
 		ChatMenu:SetScale(cfg.core.scale)
 		ChatMenu:ClearAllPoints()
 		if not ChatMenu:IsShown() then
-		if cfg.core.position == "BOTTOM" then
-			ChatMenu:SetPoint("BOTTOMLEFT", chatFrame, "TOPLEFT")
-		else
-			ChatMenu:SetPoint("TOPLEFT", chatFrame, "BOTTOMLEFT")
-		end
-		ChatFrameMenuButton:Click()
+			if cfg.core.position == "BOTTOM" then
+				ChatMenu:SetPoint("BOTTOMLEFT", chatFrame, "TOPLEFT")
+			else
+				ChatMenu:SetPoint("TOPLEFT", chatFrame, "BOTTOMLEFT")
+			end
+			ChatFrame_ToggleMenu()
 		else ChatMenu:Hide() end
 	end
 end)
@@ -102,7 +102,6 @@ guildFrame:SetScript("OnClick", function(self, button, down)
 	if button == "LeftButton" then 
 		if ( IsInGuild() ) then
 			ToggleGuildFrame()
-			GuildFrameTab2:Click()
 		else
 			print"|cff6699FFSXUI|r: You are not in a guild"
 		end
